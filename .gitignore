@@ -1,2 +1,20 @@
 node_modules
 .env
+
+# Arquivos de dados e mídia
+*.csv
+*.pdf
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
+*.webp
+*.bmp
+*.ico
+*.tiff
+*.mp4
+*.mp3
+*.zip
+*.rar
+*.7z
