@@ -15,6 +15,7 @@ node_modules
 *.tiff
 *.mp4
 *.mp3
+*.m4a
 *.zip
 *.rar
 *.7z
