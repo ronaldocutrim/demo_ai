@@ -1,6 +1,7 @@
 {
-  "name": "client",
+  "name": "Demo IA",
   "version": "1.0.0",
+  "description": "Demo de integração com IA usando OpenRouter, MCP (Model Context Protocol) e Vercel AI SDK — inclui extração de notas fiscais por imagem, servidor MCP para cadastro de despesas e exemplos de tools/RAG.",
   "type": "module",
   "scripts": {
     "dev": "json-server db.json --static .",

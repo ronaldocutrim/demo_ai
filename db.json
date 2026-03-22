@@ -25,12 +25,12 @@
       "empresa": "Windsor Hotéis"
     },
     {
-      "empresa": "Xavier Embreagens",
-      "descricao": "COXIM CAPO SCANIA 114/124/P94 (FALSI) - Cód. Barras: 1424068 - Qtd: 1 - R$ 180,00",
-      "preco": "180.00",
-      "data": "16/03/2026",
-      "local": "Maracanã - AVE ENGENHEIRO EMILIANO MACIEIRA, Nº 7",
-      "id": "BkBwizx78GI"
+      "empresa": "Auto Peças Vitória",
+      "descricao": "02 Mola c/ patim (R$20,00 un.) = R$40,00; 04 Lona p/ patim (R$10,00 un.) = R$40,00; 02 Kilo de graxa maçik (R$65,00 un.) = R$130,00; 02 Tambor de freio = R$900,00; 01 Arruela = R$15,00; 01 Pente cabo = R$10,00; 02 Estiga (R$10,00 un.) = R$40,00; 02 Kit de Buxa do S = R$90,00; 01 Retentor = R$40,00; 01 Cento do tambor = R$180,00; Serviço Mecânico = R$75,00",
+      "preco": "R$1.480,00",
+      "data": "14/03/2026",
+      "local": "Alto Alegre do Maranhão, MA",
+      "id": "lDjXykwvpIk"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
