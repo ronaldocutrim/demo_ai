@@ -1,5 +1,4 @@
 import "dotenv/config";
-import { formatCpf } from "./helper";
 
 async function main() {
   const prompt = "in file helper.ts implement a cpf formatter";
@@ -23,9 +22,6 @@ async function main() {
 
   const output = await response.json();
   console.log(JSON.stringify(output, null, 2));
-  console.log({
-    formattedCpf: formatCpf("61241093369")
-  })
 }
 
 main()

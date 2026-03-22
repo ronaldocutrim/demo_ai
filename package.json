@@ -1,17 +1,24 @@
 {
-  "name": "branas",
+  "name": "client",
   "version": "1.0.0",
-  "description": "",
-  "license": "ISC",
-  "author": "",
-  "type": "commonjs",
-  "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "json-server db.json --static .",
+    "api": "bun mcp/main.api.ts",
+    "start": "concurrently \"bun run dev\" \"bun run api\""
   },
   "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.17.4",
+    "@openrouter/ai-sdk-provider": "^2.3.1",
     "@types/node": "^25.5.0",
+    "ai": "^6.0.116",
     "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "json-server": "^1.0.0-beta.14",
     "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "concurrently": "^9.2.1"
   }
 }

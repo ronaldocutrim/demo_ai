@@ -1,12 +1,11 @@
 import "dotenv/config";
-import { formatCpf } from "./helper";
 
 async function main() {
   const { readdir } = await import("node:fs/promises");
   const prompt = "List files in the current directory using your tool.";
   const apiUrl = "https://openrouter.ai/api/v1/chat/completions";
   const model = process.env.OPENROUTER_MODEL;
-  const apiKey = process.env.OPENROUTER_APY_KEY;
+  const apiKey = process.env.OPENROUTER_API_KEY;
   
   const tools = [
     {
@@ -52,9 +51,6 @@ async function main() {
 
   const firstOutput = await firstCall.json();
   console.log(JSON.stringify(firstOutput, null, 2));
-  console.log({
-    firstFormatCpf: formatCpf("61241093369"),
-  });
   const firstMessage = firstOutput.choices?.[0]?.message;
   const toolCall = firstMessage?.tool_calls?.[0];
 

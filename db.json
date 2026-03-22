@@ -1,0 +1,37 @@
+{
+  "notas_fiscais": [
+    {
+      "id": "1",
+      "descricao": "Almoço com cliente",
+      "preco": 187.5,
+      "data": "2026-03-10",
+      "local": "São Paulo, SP",
+      "empresa": "Acme Ltda"
+    },
+    {
+      "id": "2",
+      "descricao": "Passagem aérea",
+      "preco": 643,
+      "data": "2026-03-15",
+      "local": "Guarulhos, SP",
+      "empresa": "Azul Linhas Aéreas"
+    },
+    {
+      "id": "3",
+      "descricao": "Hospedagem hotel",
+      "preco": 420,
+      "data": "2026-03-18",
+      "local": "Rio de Janeiro, RJ",
+      "empresa": "Windsor Hotéis"
+    },
+    {
+      "empresa": "Xavier Embreagens",
+      "descricao": "COXIM CAPO SCANIA 114/124/P94 (FALSI) - Cód. Barras: 1424068 - Qtd: 1 - R$ 180,00",
+      "preco": "180.00",
+      "data": "16/03/2026",
+      "local": "Maracanã - AVE ENGENHEIRO EMILIANO MACIEIRA, Nº 7",
+      "id": "BkBwizx78GI"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
