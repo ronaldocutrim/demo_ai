@@ -1,14 +1,16 @@
 import "dotenv/config";
 import fs from "fs";
-import { da } from "zod/locales";
+import path from "path";
 
 async function main() {
-  const prompt = "Transcrever esse audio";
+  const prompt = "Transcrever esse audio listando todas as despesas e somas dos items, use markdown";
   const apiUrl = "https://openrouter.ai/api/v1/chat/completions";
   const model = process.env.OPENROUTER_MODEL_MEDIA;
   const apiKey = process.env.OPENROUTER_API_KEY;
-  const audio = fs.readFileSync("./combustivel.m4a");
-  const base64Audio = audio.toString("base64");
+  const audio1 = fs.readFileSync(path.resolve(import.meta.dirname, "diferencial1.ogg"));
+  const audio2 = fs.readFileSync(path.resolve(import.meta.dirname, "diferencial2.ogg"));
+  const base64Audio1 = audio1.toString("base64");
+  const base64Audio2 = audio2.toString("base64");
   const request = await fetch(apiUrl, {
     method: "POST",
     headers: {
@@ -28,9 +30,16 @@ async function main() {
             {
               type: "input_audio",
               input_audio: {
-                data: base64Audio,
-                format: "m4a",
+                data: base64Audio1,
+                format: "ogg",
               },
+            },
+            {
+              type: "input_audio",
+              input_audio: {
+                data: base64Audio2,
+                format: "ogg",
+              }
             }
           ],
         },

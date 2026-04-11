@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "json-server db.json --static .",
     "api": "bun mcp/main.api.ts",
-    "start": "concurrently \"bun run dev\" \"bun run api\""
+    "chat": "cd chat && bun run dev",
+    "start": "concurrently \"bun run dev\" \"bun run api\" \"bun run chat\""
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.17.4",
